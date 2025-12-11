@@ -8,20 +8,23 @@ app.get("/" , (req , res  )=> {
 });
 
 
-app.get("/aboutme" , (req , res  )=> {
+app.post("/aboutme" , (req , res  )=> {
   res.send("<h1>Hello This is the Bilal  Full Stack Developer Coming Soon  </h1>")
 });
 
 
-app.get("/Contact" , (req , res  )=> {
+app.patch("/Contact" , (req , res  )=> {
   res.send("<h1>Contact on the Linkdin </h1>")
 });
 
 
-app.get("/" , (req , res  )=> {
+app.put("/put" , (req , res  )=> {
   res.send("<h1>Hello This is the Bilal  Backhand Project </h1>")
 });
 
+app.delete("/put" , (req , res  )=> {
+  res.send("<h1>Hello This is the Bilal  Backhand Project </h1>")
+});
 app.listen(port, () => {
   console.log(`Server Running  on port  ${port}.`);
 })
